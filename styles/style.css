@@ -1,0 +1,268 @@
+/* 
+    Project: Legal Pars
+    Developer: Ali Jazbi
+    Description: This website template is designed for SCM Pars Law Office to help them have a professional and informative website that showcases their company and its services. The template includes a minimal design and user-friendly interface that makes it easy to navigate and use.
+    color pallet:
+    #0B4577
+    #094476
+    #939393
+*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* change scroll style */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #e4e4e4;
+}
+::-webkit-scrollbar-thumb {
+    background: #11538deb;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #094476;
+}
+/* add new font */
+@font-face {
+    font-family: 'vazir';
+    src: url('../font/vazir.ttf');
+}
+/* Global Css */
+body{
+    font-family: 'vazir', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+main{
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+section , footer{
+    width: 100%;
+    height: 100vh;
+}
+footer{
+    height: 58vh;
+}
+@media (min-width:992px){
+    main{
+        scroll-snap-type: y mandatory;
+        overflow-y:scroll;
+    }
+    section , footer{
+        scroll-snap-align: start;
+    }
+}
+.color-primary{
+    color: #094476;
+}
+.color-secondary{
+    color: #939393;
+}
+.color-blue{
+    color: #0B4577;
+}
+.bg-blue{
+    background-color: #0B4577;
+}
+.fs-1-rem{
+    font-size: 1rem;
+}
+.fs-2-rem{
+    font-size: 2rem;
+}
+.fs-3-rem{
+    font-size: 3rem;
+}
+.ms-2px{
+    margin-inline: 2px;
+}
+.ms-4-1{
+    margin-inline: 41px;
+}
+.mt-10{
+    margin-top: 10%;
+}
+.mt-20{
+    margin-top: 20%;
+}
+.mt-30{
+    margin-top: 30%;
+}
+.h-60{
+    height: 60%;
+}
+.h-80{
+    height: 80%;
+}
+.h-85{
+    height: 85%;
+}
+.h-90{
+    height: 90%;
+}
+.w-80{
+    width: 80%;
+}
+.w-85{
+    width: 85%;
+}
+.w-90{
+    width: 90%;
+}
+
+/* Custom Class */
+
+/* Navbar Start */
+.navbar{
+    width: 100%;
+    background-color: #fff !important;
+    padding: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.navbar .container{
+    width: 80%;
+}
+.navbar .nav-item .nav-link {
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+}
+.navbar .nav-item .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #3076b3 !important; ;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #3076b3 !important;
+}
+.navbar .nav-item .nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+/* Navbar END */
+
+/* divider */
+.divider
+{
+	position: relative;
+    margin-top: -30px;
+	height: 1px;
+}
+.div-stopper:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -6px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 12px;
+	background-color: white;
+	border-left: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
+}
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, #0B4577, transparent);
+}
+/* divider end */
+
+/* Banner Start */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:5vh 10vh;
+    margin-top: -11.1vh;
+    scroll-snap-align: start;
+}
+.banner img{
+    width: 500px;
+    height: 160px;
+    margin-top: 70px;
+}
+.banner .cssbuttons-io-button {
+    background: #1963a4;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-right: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 2em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 -0.6em 1.6em 0 #0B4577;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-left: 3.3em;
+    cursor: pointer;
+}
+.banner .cssbuttons-io-button .icon {
+    background: white;
+    margin-right: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 2em;
+    box-shadow: 0.1em 0.2em 0.6em 0.1em #0B4577;
+    left: 0.3em;
+    transition: all 0.3s;
+}
+.banner .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+.banner .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #0B4577;
+}
+.banner .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+.banner .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+/* Banner End */
+
