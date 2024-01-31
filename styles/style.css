@@ -170,6 +170,57 @@ footer{
 }
 /* *-----------------END------------------- */
 
+/* ! NOTE Back to top  */
+#button {
+    display: inline-block;
+    background:-webkit-linear-gradient(45deg, #083358 1%, #125c9d 100%);
+    background:linear-gradient(45deg, #083358 1%, #125c9d 100%);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999999;
+    box-shadow: 0px 0px 7px #19191962
+}
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 50px;
+    color: #fff;
+}
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#button:active {
+    background-color: #555;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+@media (min-width: 500px) {
+    #button {
+        margin: 30px;
+    }
+}
+@media (max-width: 991px) {
+    #button{
+        bottom: 50px;
+    }
+}
+  /* ---------END---------- */
+
 /* Navbar Start */
 .navbar{
     width: 100%;
