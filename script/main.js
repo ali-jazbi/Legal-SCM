@@ -1,3 +1,4 @@
+AOS.init();
 var btn = $("#button");
 
 window.onscroll = function () {
