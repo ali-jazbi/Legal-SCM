@@ -158,6 +158,18 @@ footer{
 }
 /* Custom Class */
 
+/* Progress Bar */
+#progress-bar{
+    position:fixed;
+    height:8px;
+    width:0%;
+    z-index: 999999;
+    background:#083358;
+    background:-webkit-linear-gradient(to right,#0d477a,#115896);
+    background:linear-gradient(to right,#0d477a,#115896)
+}
+/* *-----------------END------------------- */
+
 /* Navbar Start */
 .navbar{
     width: 100%;
