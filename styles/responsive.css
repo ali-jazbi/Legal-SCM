@@ -139,7 +139,7 @@
         white-space: nowrap !important;
         line-height: 2 ;
     }
-    footer .container-fluid .container-lg .text-light:last-child , footer .container-fluid .container-lg .text-light:last-child a{
-        color: rgba(255, 255, 255, 0.838) !important;
+    footer .container-fluid .container-lg .text-light:last-child{
+        color: rgba(255, 255, 255, 0.76) !important;
     }
 }
