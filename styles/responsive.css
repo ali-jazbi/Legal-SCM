@@ -2,3 +2,137 @@
     This code represents the selected CSS styles.
     It is responsible for applying specific styles to the selected elements.
 */
+@media (max-width:768px){
+    #button {
+        bottom: 32px;
+        left: 32px;
+    }
+
+    /* Banner Start*/
+    .banner{
+        padding: 4vh !important;
+        display: flex;
+        justify-content: center;
+    }
+    .banner img{
+        width: 170px;
+        height: 70px;
+        object-fit:contain !important;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .banner h1 span{
+        font-size: 2rem;
+    }
+    .banner a{
+        display: flex;
+        justify-content: center;
+    }
+    .banner .cssbuttons-io-button {
+        font-size: 16px;
+        padding-left: 2.6em;
+    }
+    .banner .cssbuttons-io-button .icon {
+        height: 1.8em;
+        width: 1.8em;
+    }
+    .banner .cssbuttons-io-button .icon svg {
+        width: 0.9em;
+    }
+    /* Banner END */
+
+    /* Intellectual Property Start */
+    #intellectual-property{
+        height: 120vh !important;
+    }
+    #intellectual-property .col-12{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    #intellectual-property img{
+        filter: drop-shadow(0px 0px 10px #dadada83);
+        width: 300px;
+        height: 350px;
+    }
+    #intellectual-property h1{
+        font-size: 1.5rem !important;
+        text-align: center !important;
+        background-size: 100% 7px !important;
+    }
+    #intellectual-property h1:hover {
+        background-size: 100% 100% !important;
+    }
+    #intellectual-property h2{
+        font-size: 1.2rem !important;
+        text-align: center !important;
+    }
+    /* Intellectual Property END */
+
+    #services{
+        height: 170vh;
+        text-align: center;
+    }
+    #services .col-12{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #services .col-12 .divider-line{
+        width: 15%;
+    }
+
+    #temporary-import{
+        height: 140vh;
+    }
+    #temporary-import dotlottie-player{
+        width: 200px !important;
+        height: 200px !important;
+    }
+    #practice-areas{
+        height: 140vh;
+    }
+    #practice-areas .row{
+        width: 107% !important;
+        text-align: center;
+    }
+    #practice-areas .col-12:nth-child(2){
+        margin-bottom: 50px;
+    }
+    #practice-areas img{
+        width: 95% !important;
+    }
+    #practice-areas .practice-item{
+        justify-content: start !important;
+    }
+    #practice-areas .practice-text{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    #practice-areas .practice-text h3{
+        font-size: 24px;
+    }
+    #practice-areas .practice-icon{
+        width: 70px !important;
+        height: 70px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 0 !important;
+        margin-top: 20px;
+    }
+    footer{
+        height: 120vh;
+    }
+    footer .container-fluid .container-lg{
+        flex-direction: column-reverse;
+        font-size: 14px;
+    }
+    footer .container-fluid .container-lg .text-light{
+        white-space: nowrap !important;
+        line-height: 2 ;
+    }
+}

@@ -1,4 +1,6 @@
 AOS.init();
+AOS.init({ disable: "mobile" });
+
 var btn = $("#button");
 
 window.onscroll = function () {
