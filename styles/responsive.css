@@ -76,7 +76,7 @@
     /* Intellectual Property END */
 
     #services{
-        height: 170vh;
+        height: 159vh;
         text-align: center;
     }
     #services .col-12{
@@ -97,6 +97,7 @@
     }
     #practice-areas{
         height: 140vh;
+        overflow-x: hidden;
     }
     #practice-areas .row{
         width: 107% !important;
