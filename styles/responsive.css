@@ -3,11 +3,14 @@
     It is responsible for applying specific styles to the selected elements.
 */
 @media (max-width:768px){
-    #button {
+    #button{
         bottom: 32px;
         left: 32px;
+        opacity: 0.3 !important;
     }
-
+    #button:active{
+        opacity: 1 !important;
+    }
     /* Banner Start*/
     .banner{
         padding: 4vh !important;
@@ -111,6 +114,7 @@
     #practice-areas .practice-text{
         width: 100% !important;
         margin-top: 20px;
+        text-align: start;
     }
     #practice-areas .practice-text h3{
         font-size: 24px;
