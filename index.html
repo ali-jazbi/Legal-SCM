@@ -47,28 +47,67 @@
         
         <!-- Navbar Start-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary"dir="rtl">
-                <div class="container">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">اصلی</a>
-                        </li>
-                        <li class="nav-item ps-5">
-                            <a class="nav-link" href="#services">خدمات</a>
-                        </li>
-                        <li class="nav-item ps-5">
-                            <a class="nav-link" href="#intellectual-property">بلاگ</a>
-                        </li>
-                        <li class="nav-item ps-5">
-                            <a class="nav-link" href="#practice-areas">درباره ما</a>
-                        </li>
-                        <li class="nav-item ps-5">
-                            <a class="nav-link" href="#footer">ارتباط با ما</a>
-                        </li>
-                    </ul>
-                    <a class="navbar-brand" href="./index.html">
-                        <img width="160" height="55"  src="./images/icon/en-logo-transparent2.png" alt="SCM Pars logo">
-                    </a>
+            <!-- navbar only in pc Start -->
+            <div class="container d-none d-lg-flex">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">اصلی</a>
+                    </li>
+                    <li class="nav-item ps-5">
+                        <a class="nav-link" href="#services">خدمات</a>
+                    </li>
+                    <li class="nav-item ps-5">
+                        <a class="nav-link" href="#intellectual-property">بلاگ</a>
+                    </li>
+                    <li class="nav-item ps-5">
+                        <a class="nav-link" href="#practice-areas">درباره ما</a>
+                    </li>
+                    <li class="nav-item ps-5">
+                        <a class="nav-link" href="#footer">ارتباط با ما</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="./index.html">
+                    <img width="160" height="55"  src="./images/icon/en-logo-transparent2.png" alt="SCM Pars logo">
+                </a>
+            </div>
+            <!-- navbar only in pc END -->
+
+            <!-- navbar only in mobile Start --> 
+            <div class="container-fluid d-lg-none pe-0 ps-4">
+                <a class="nav-link active pt-2" href="#" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="bi bi-list fs-1"></i>
+                </a>
+                <a class="navbar-brand" href="./index.html">
+                    <img width="120" src="./images/icon/en-logo-transparent2.png" alt="SCM Pars logo">
+                </a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">اصلی</a>
+                            </li>
+                            <li class="nav-item ps-5">
+                                <a class="nav-link" href="#services">خدمات</a>
+                            </li>
+                            <li class="nav-item ps-5">
+                                <a class="nav-link" href="#intellectual-property">بلاگ</a>
+                            </li>
+                            <li class="nav-item ps-5">
+                                <a class="nav-link" href="#practice-areas">درباره ما</a>
+                            </li>
+                            <li class="nav-item ps-5">
+                                <a class="nav-link" href="#footer">ارتباط با ما</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+            <!-- navbar only in mobile END --> 
+
         </nav>
         <!-- Navbar END-->
 

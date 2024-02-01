@@ -120,13 +120,13 @@ footer{
     height: 90%;
 }
 .w-80{
-    width: 80%;
+    width: 80% !important;
 }
 .w-85{
-    width: 85%;
+    width: 85% !important;
 }
 .w-90{
-    width: 90%;
+    width: 90% !important;
 }
 .bg-curved{
     background: linear-gradient(270deg, #0b3e6bd5, #0d416eea, #083358);
