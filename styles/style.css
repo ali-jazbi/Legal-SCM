@@ -180,10 +180,9 @@ footer{
     text-align: center;
     border-radius: 50px;
     position: fixed;
-    bottom: 0px;
+    bottom: -100px !important;
     left: 0px;
-    transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+    transition: all ease-in-out .3s;
     opacity: 0;
     visibility: hidden;
     z-index: 9999999;
@@ -206,18 +205,9 @@ footer{
     background-color: #555;
 }
 #button.show {
+    bottom: 0;
     opacity: 1;
     visibility: visible;
-}
-@media (min-width: 500px) {
-    #button {
-        margin: 30px;
-    }
-}
-@media (max-width: 991px) {
-    #button{
-        bottom: 50px;
-    }
 }
   /* ---------END---------- */
 

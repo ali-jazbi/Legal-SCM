@@ -4,9 +4,12 @@
 */
 @media (max-width:768px){
     #button{
-        bottom: 32px;
+        bottom: -100px !important;
         left: 32px;
         opacity: 0.3 !important;
+    }
+    #button.show{
+        bottom: 32px !important;
     }
     #button:active{
         opacity: 1 !important;
