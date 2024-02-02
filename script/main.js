@@ -23,3 +23,14 @@ function showPosition() {
   let scrolled = (winScroll / height) * 100;
   document.getElementById("progress-bar").style.width = scrolled + "%";
 }
+
+// Offcanvas
+document.addEventListener("DOMContentLoaded", function () {
+  var myOffcanvas = document.getElementById("offcanvasExample");
+  var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+  document.getElementById("opanMenu").addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    bsOffcanvas.toggle();
+  });
+});
