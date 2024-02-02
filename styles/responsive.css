@@ -2,14 +2,14 @@
     This code represents the selected CSS styles.
     It is responsible for applying specific styles to the selected elements.
 */
-@media (max-width:768px){
+@media (max-width:762px){
     #button{
         bottom: -100px !important;
         left: 32px;
         opacity: 0.3 !important;
     }
     #button.show{
-        bottom: 32px !important;
+        bottom: 31px !important;
     }
     #button:active{
         opacity: 1 !important;
@@ -53,6 +53,7 @@
 
     /* Banner Start*/
     .banner{
+        height: 101vh;
         padding: 4vh !important;
         display: flex;
         justify-content: center;
@@ -171,6 +172,181 @@
     }
     footer{
         height: 1000px;
+    }
+    footer .container-fluid .container-lg{
+        flex-direction: column-reverse;
+        font-size: 14px;
+    }
+    footer .container-fluid .container-lg .text-light{
+        white-space: nowrap !important;
+        line-height: 2 ;
+    }
+    footer .container-fluid .container-lg .text-light:last-child{
+        color: rgba(255, 255, 255, 0.76) !important;
+    }
+}
+
+/* Only For Tablet */
+@media (min-width:768px) and (max-width:1024px){
+    /* Your CSS code here */
+    #button{
+        bottom: -100px !important;
+        left: 32px;
+        opacity: 0.3 !important;
+    }
+    #button.show{
+        bottom: 32px !important;
+    }
+    #button:active{
+        opacity: 1 !important;
+    }
+
+
+    /* -----------------END------------------- */
+
+    /* Navbar Start */
+    .offcanvas{
+        width: 50% !important;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.676);
+    }
+    .offcanvas .offcanvas-header{
+        box-shadow: 0px 2px 10px rgba(138, 138, 138, 0.224);
+        margin-bottom: 40px;
+        background-color: rgba(255, 255, 255, 0.155)
+    }
+    .offcanvas .offcanvas-title{
+        margin-top: 5px;
+    }
+    .offcanvas .offcanvas-title img{
+        width: 50%;
+    }
+    .offcanvas .offcanvas-body li{
+        padding: 25px;
+        /* box-shadow: -12px -8px 40px rgba(70,70,70,0.12) inset; */
+    }
+
+    /* Banner Start*/
+    .banner{
+        padding: 4vh !important;
+        display: flex;
+        justify-content: center;
+    }
+    .banner img{
+        width: 170px;
+        height: 70px;
+        margin-top: -50px;
+        object-fit:contain !important;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .banner h1 span{
+        font-size: 2rem;
+    }
+    .banner a{
+        display: flex;
+        justify-content: center;
+    }
+    .banner .cssbuttons-io-button {
+        font-size: 16px;
+        padding-left: 2.6em;
+    }
+    .banner .cssbuttons-io-button .icon {
+        height: 1.8em;
+        width: 1.8em;
+    }
+    .banner .cssbuttons-io-button .icon svg {
+        width: 0.9em;
+    }
+    /* Banner END */
+
+    /* Intellectual Property Start */
+    #intellectual-property{
+        height: 1150px;
+    }
+    #intellectual-property .col-12{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    #intellectual-property img{
+        filter: drop-shadow(0px 0px 10px #dadada83);
+        width: 500px;
+        height: 450px;
+    }
+    #intellectual-property h1{
+        font-size: 2rem !important;
+        text-align: center !important;
+        background-size: 100% 7px !important;
+    }
+    #intellectual-property h1:hover {
+        background-size: 100% 100% !important;
+    }
+    #intellectual-property h2{
+        font-size: 1.7rem !important;
+        text-align: center !important;
+    }
+    /* Intellectual Property END */
+
+    #services{
+        height: 1000px;
+        text-align: center;
+    }
+    #services .col-12{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #services .col-12 .divider-line{
+        width: 15%;
+    }
+
+    #temporary-import{
+        height: 1050px;
+
+    }
+    #temporary-import dotlottie-player{
+        width: 200px !important;
+        height: 200px !important;
+    }
+    #practice-areas{
+        height: 1050px;
+    }
+    #practice-areas .row{
+        text-align: center;
+    }
+    #practice-areas .col-12:nth-child(2){
+        margin-bottom: 50px;
+    }
+    #practice-areas img{
+        width: 55% !important;
+    }
+    #practice-areas .practice-item{
+        justify-content: start !important;
+    }
+    #practice-areas .practice-text{
+        width: 100% !important;
+        margin-top: 20px;
+        text-align: start;
+    }
+    #practice-areas .practice-text h3{
+        font-size: 24px;
+    }
+    #practice-areas .practice-icon{
+        width: 70px !important;
+        height: 70px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 0 !important;
+        margin-top: 20px;
+    }
+    footer{
+        height: 600px;
     }
     footer .container-fluid .container-lg{
         flex-direction: column-reverse;

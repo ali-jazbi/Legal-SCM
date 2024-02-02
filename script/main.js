@@ -1,5 +1,5 @@
 AOS.init();
-AOS.init({ disable: "mobile" });
+AOS.init({ disable: "mobile", disable: "tablet" });
 
 var btn = $("#button");
 
