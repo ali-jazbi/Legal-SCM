@@ -136,10 +136,8 @@
     }
     #practice-areas{
         height: 1050px;
-        overflow-x: hidden;
     }
     #practice-areas .row{
-        width: 107% !important;
         text-align: center;
     }
     #practice-areas .col-12:nth-child(2){
