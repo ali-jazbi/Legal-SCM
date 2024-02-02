@@ -34,3 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     bsOffcanvas.toggle();
   });
 });
+
+$("#offcanvasExample a").click(function () {
+  $(".offcanvas").offcanvas("hide");
+});
